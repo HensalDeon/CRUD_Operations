@@ -1,0 +1,48 @@
+<section>
+  <div class="container mt-5">
+    <div class="row d-flex justify-content-center text-white">
+      <div class="col-md-6 bg-dark" style="border-radius: 15px;">
+
+        <h2 class="text-center">Edit Product</h2>
+        <form action="/admin/edit-product" method="post" enctype="multipart/form-data">
+          <div class="form-group">
+            <label for="" class="fw-bold">Name</label>
+            <input type="text" name="Name" value="{{product.Name}}" class="form-control" />
+          </div>
+          <div class="form-group">
+            <label for="" class="fw-bold">Description</label>
+            <input type="text" name="description" value="{{product.description}}" class="form-control" />
+          </div>
+          <div class="form-group">
+            <label for="" class="fw-bold">Price</label>
+            <input type="text" name="price" value="{{product.price}}" class="form-control" />
+          </div>
+          <div class="form-group">
+            <label for="" class="fw-bold">Add Image</label>
+
+            <img src="/product_images/{{product._id}}.jpg" class="my-3 border border-dark rounded mx-auto d-block"
+              style="width=100px; height:100px"  id="imgView" >
+
+            <div>
+              <input type="file" name="image" onchange="viewImage(event)" value="{{product.image}}" class="form-control" required />
+              <input name="id" type="text" value="{{product._id}}" hidden>
+            </div>
+
+          </div>
+          <div class="d-flex justify-content-center">
+            <button type="submit" class="btn btn-success mt-3">UPDATE</button>
+          </div>
+        </form>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<script>
+  function viewImage(event){
+    document.getElementById('imgView').src=URL.createObjectURL(event.target.files[0])
+
+  }
+</script>

@@ -1,0 +1,75 @@
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"><span style="color:darkgreen;font-size: 1.5em;"><b>Book Store</b></span></a>
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+        >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/">Orders <span class="sr-only">(current)</span></a>
+                </li>
+                <div class="dropdown">
+  <button class="btn btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Category
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="#">Romance</a>
+    <a class="dropdown-item" href="#">Fiction</a>
+    <a class="dropdown-item" href="#">Biography</a>
+    <a class="dropdown-item" href="#">Action</a>
+  </div>
+                </div>
+
+                {{!-- <div class="btn-group dropstart">
+                    <button
+                        type="button"
+                        id="categoryDropdown"
+                        class="btn dropdown btn-light dropdown-toggle"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                    >
+                        Category
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Romance</a></li>
+                        <li><a class="dropdown-item" href="#">Fiction</a></li>
+                        <li><a class="dropdown-item" href="#">Biography</a></li>
+                        <li><a class="dropdown-item" href="#">Action</a>
+                    </ul>
+                </div> --}}
+                <li class="nav-item active">
+                    <a class="nav-link" href="/">Wishlist </a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/">About</a>
+                </li>
+            </ul>
+            <!-- Search form -->
+            <div class="header-action-icon-2 mx-5">
+                {{!-- <a href="/">
+                    <img class="svgInject" style="width:30px" alt="account" src="/images/icons8-cart-50.png" />
+                </a> --}}
+                <a href="/">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="" class="bi bi-cart" viewBox="0 0 16 16">
+                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                </svg>
+                </a>
+            </div>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                <a href="/logout" class="btn btn-outline-danger my-2 my-sm-0 mx-2">Logout</a>
+            </form>
+        </div>
+    </nav>
+</header>

@@ -1,0 +1,38 @@
+<section>
+  <div class="container mt-5">
+    <div class="row d-flex justify-content-center">
+      <div class="col-md-6 bg-dark text-white" style="border-radius: 15px;">
+
+        <h2 class="text-center">Add Product</h2>
+        <form
+          action="/admin/add-product"
+          method="post"
+          enctype="multipart/form-data"
+        >
+          <div class="form-group">
+            <label for="" class="fw-bold">Name</label>
+            <input type="text" name="Name" class="form-control" />
+          </div>
+          <div class="form-group">
+            <label for="" class="fw-bold">Description</label>
+            <input type="text" name="description" class="form-control" />
+          </div>
+          <div class="form-group">
+            <label for="" class="fw-bold">Price</label>
+            <input type="text" name="price" class="form-control" />
+          </div>
+          <div class="form-group">
+            <label for="" class="fw-bold">Add Image</label>
+            <input type="file" name="image" class="form-control" />
+          </div>
+          <div class="d-flex justify-content-center"><button
+              type="submit"
+              class="btn btn-success mt-3"
+            >Submit</button></div>
+        </form>
+
+      </div>
+    </div>
+
+  </div>
+</section>
